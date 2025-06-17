@@ -11,9 +11,6 @@ import { BotServise } from "./bot.service";
 export class BotUpdate{
     constructor( private readonly BotSevise: BotServise) {}
 
-    
-
-
     @On('contact')
     onContact(@Ctx() ctx: Context) {
      const contact = (ctx.message as any).contact;
@@ -41,7 +38,7 @@ export class BotUpdate{
 
     @Hears('Back')
     onBack(@Ctx() ctx: Context){
-        return this.BotSevise.onStart(ctx);
+        return this.BotSevise.onStartMenu(ctx);
     }
 
     @Hears(['Instagram', 'Telegram', 'YouTube', 'GitHub'])

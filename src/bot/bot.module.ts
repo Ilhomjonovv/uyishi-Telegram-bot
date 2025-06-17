@@ -1,8 +1,8 @@
-import { Module } from "@nestjs/common";
-import { BotUpdate} from './bot.update';
-import { BotServise} from './bot.service';
+import { Module } from '@nestjs/common';
+import { BotUpdate } from './bot.update';
+import { BotServise } from './bot.service';
 
 @Module({
-    providers: [BotUpdate, BotServise],
+  providers: [BotUpdate, BotServise],
 })
-export class BotModule{}
+export class BotModule {}

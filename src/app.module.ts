@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
-import { TelegrafModule} from 'nestjs-telegraf';
-import { BotModule} from './bot/bot.module';
-
+import { TelegrafModule } from 'nestjs-telegraf';
+import { BotModule } from './bot/bot.module';
+import {config} from "dotenv"
+config()
 @Module({
   imports: [
     TelegrafModule.forRoot({
-      token: '7700833481:AAHejiQemqJMfHG97BS_QWjaVXi92Lw5Cxs'
+      token: String(process.env.BOT_TOKEN),
     }),
-    BotModule
+    BotModule,
   ],
-  
 })
 export class AppModule {}

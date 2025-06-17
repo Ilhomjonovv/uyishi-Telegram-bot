@@ -61,7 +61,7 @@ export class BotServise{
         if (link) {
             await ctx.reply(`${platform} havolasi : ${link}`)
         }else{
-            await ctx.reply('BUnday platforma topilmadi');
+            await ctx.reply('Bunday platforma topilmadi');
         }
     }
 
@@ -71,7 +71,9 @@ export class BotServise{
 ☎️ Qo'llab quvvatlash xizmati orqali bot haqidagi istalgan savolingizga javob topishingiz olishingiz mumkin!`, Markup.inlineKeyboard([
 
     [ Markup.button.url('☎️ Qollab-Quvvatlash', 'https://t.me/xojiakbar2270')]
-]))
+])) 
+
+
        
     }
 
@@ -79,6 +81,6 @@ export class BotServise{
         await ctx.reply(`   
                 To'lov uchun carta 
 
-12345678901234  Palonchiyev  Palonchi`)
+    12345678901234  Palonchiyev  Palonchi`)
     }
 }
